@@ -12,10 +12,11 @@ product_height_cm number(10,2),
 product_width_cm number(10,2)
 );
 
+-- transform raw -> stage
 insert into ecom_project.stage.products_stage
 select
 product_id,
-lower(product_category_name) as category_name,
+lower(product_category_name) as product_category_name,
 product_name_length,
 product_description_length,
 product_photos_qty,
