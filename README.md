@@ -21,6 +21,7 @@ this project builds a simple data warehouse in snowflake using:
 4. run sql/stage
 5. run sql/mart
 6. run sql/KPI's
+7. run sql/data_quality_checks.sql
 
 ## upload data to snowflake internal stage
 
@@ -29,4 +30,6 @@ this project builds a simple data warehouse in snowflake using:
 
 -- you can use following sql command for uploading datasets
 "put file:///<local_path>/filename.csv @<stage location> auto_compress = false;"
+
+
 
